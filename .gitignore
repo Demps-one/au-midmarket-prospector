@@ -1,0 +1,5 @@
+# Prospect data (personal info) stays out of git unless deliberately enabled - see skill README
+data/
+.env
+__pycache__/
+*.pyc

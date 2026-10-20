@@ -1,0 +1,12 @@
+#!/bin/sh
+# Blocks commits containing secrets or personal data. Bypass (not recommended): git commit --no-verify
+root=$(git rev-parse --show-toplevel)
+python3 "$root/.claude/skills/security-review/scripts/security_check.py" --staged >/tmp/au-precommit.$$ 2>&1
+rc=$?
+if [ $rc -ne 0 ]; then
+  echo "Commit blocked by security-review:"
+  grep -E '^(CRITICAL|HIGH)' /tmp/au-precommit.$$
+  echo "Remove the flagged content (or unstage the file) and commit again."
+fi
+rm -f /tmp/au-precommit.$$
+exit $rc

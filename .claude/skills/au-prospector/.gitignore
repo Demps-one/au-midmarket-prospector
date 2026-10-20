@@ -1,0 +1,8 @@
+# Prospect data holds personal info - keep it out of this repo
+*.csv
+*.tsv
+*.json
+!references/*.json
+costs.log
+.env
+__pycache__/
