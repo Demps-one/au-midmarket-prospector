@@ -1,6 +1,10 @@
 # ICP and scoring
 
-## Ideal customer profile (draft — BDM to refine)
+> **This file is a worked example** (a managed hosting provider entering Australia), driven by
+> [`use-case.md`](use-case.md). Edit it to match your business, or fill in `use-case.md` and ask
+> Claude to rebuild this file from your answers.
+
+## Ideal customer profile (draft — refine for your business)
 - **Geography:** HQ in Australia, or an Australian entity that makes its own IT decisions. Priority: NSW and VIC (near the Sydney/Melbourne data centres), then QLD, WA, SA.
 - **Size (mid-market):** ~100–1,000 employees, roughly A$20m–A$500m revenue. 50–100 staff is acceptable with strong signals.
 - **Infrastructure:** runs meaningful IT itself — on-prem servers, colocation, VMware, legacy hosting, or a public cloud estate it struggles to manage.

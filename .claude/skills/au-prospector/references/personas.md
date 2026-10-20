@@ -1,5 +1,9 @@
 # Target personas
 
+> **This file is a worked example**, driven by [`use-case.md`](use-case.md). The personas below
+> suit the managed-hosting example (IT and finance buyers). Replace them with the job titles that
+> matter for your business, or ask Claude to rebuild this file from your `use-case.md` answers.
+
 Only these people go in `contacts.csv`. Everyone else at the account is noise: don't pay to enrich them.
 
 | Persona | Role in the deal | Titles to include (Icypeas `currentJobTitle.include`) |

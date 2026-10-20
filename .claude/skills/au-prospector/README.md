@@ -1,6 +1,8 @@
 # au-prospector
 
-A Claude Code skill that works as an SDR for a managed hosting provider's Australian launch. It finds mid-market AU companies that fit the provider's ICP and maps their IT and finance decision-makers from LinkedIn-sourced data via Treg. It then finds verified emails and AU mobiles, scores each account, and writes deduplicated CSVs plus a call sheet for each run.
+A configurable Claude Code skill that works as an SDR for **your** business. It finds companies that fit your ideal-customer profile and maps the decision-makers you want to reach from LinkedIn-sourced data via Treg. It then finds verified emails and mobiles, scores each account, and writes deduplicated CSVs plus a call sheet for each run.
+
+**Your business and targeting live in [`references/use-case.md`](references/use-case.md)** — fill in that questionnaire first, then ask Claude to rebuild the ICP, scoring and personas from it. The files below ship pre-filled with a worked example (a managed hosting provider entering Australia) so you can see how it behaves.
 
 `SKILL.md` is the entry point Claude reads. `references/` holds the ICP, personas, data sources and per-run lessons. `scripts/` holds the CSV merge, call-sheet builder and a raw Treg client.
 
